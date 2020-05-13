@@ -10,6 +10,7 @@ class SolusSplitter extends IPSModule {
     {
         parent::Create();
 
+        $this->RequireParent("{D06FE70A-469B-FA9B-9686-030D62DE208C}");
         //$this->RegisterVariableInteger("socket_" . $_IPS['SELF'], "Socket", '', 0);
         
         $this->InitialSetup();
@@ -26,8 +27,22 @@ class SolusSplitter extends IPSModule {
         parent::ApplyChanges();
     }
 
-    public function SendDataToParent () {
-        // This goes to the I/O
+    public function ForwardData($JSONString)
+    {
+        $data = json_decode($JSONString);
+        IPS_LogMessage("Splitter FRWD", utf8_decode($data->Buffer));
+
+        $this->SendDataToParent(json_encode(Array("DataID" => "{D582C717-976A-F604-7E09-95A1983B596A}", "Buffer" => $data->Buffer)));
+
+        return "String data for device instance!";
+    }
+
+    public function ReceiveData($JSONString)
+    {
+        $data = json_decode($JSONString);
+        IPS_LogMessage("Splitter RECV", utf8_decode($data->Buffer));
+
+        $this->SendDataToChildren(json_encode(Array("DataID" => "{236C9591-9193-9A9D-CD0D-B451ABC78237}", "Buffer" => $data->Buffer)));
     }
 
 

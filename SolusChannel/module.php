@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/../libs/symetrixHelper.php';
-
 class SolusChannel extends IPSModule {
 
     /*
@@ -42,13 +40,15 @@ class SolusChannel extends IPSModule {
         }
     }
 
-    public function SendDataToParent () {
-        // This sends data to the SolusSplitter
-        $Data['DataID'] = '{9ec96621-3b20-412e-924d-da68965ef352}';
+    public function Send()
+    {
+        $this->SendDataToParent(json_encode(Array("DataID" => "{5D8F4A49-874D-2C1A-77CD-6C05106FA557}")));
     }
 
-    public function receiveData () {
-        
+    public function ReceiveData($JSONString)
+    {
+        $data = json_decode($JSONString);
+        IPS_LogMessage("Device RECV", utf8_decode($data->Buffer));
     }
 
 

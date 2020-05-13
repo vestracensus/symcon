@@ -78,7 +78,7 @@ class SolusSplitter extends IPSModule {
         if ($id = GetIDForIdent ("socket_" . $_IPS['SELF'])) {
             // If socket ID is 0 there must be no socket, so create it
             if (GetValueInteger ($id) == 0) {
-                $socketInstance = IPS_CreateInstance ("{3CFF0FD9-E306-41DB-9B5A-9D06D38576C3}");
+                $socketInstance = IPS_CreateInstance ("{D06FE70A-469B-FA9B-9686-030D62DE208C}");
                 IPS_SetIdent ($socketInstance, "socket_" . $_IPS['SELF']);
                 // Set the socket ID in the variable so we can use it next time too
                 SetValueInteger ($id, $socketInstance);

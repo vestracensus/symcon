@@ -94,7 +94,7 @@ class SolusChannel extends IPSModule {
         $mute_var_name = 'SolusMute';
 
         if (@ !IPS_GetVariableProfile ($mute_var_name)) {
-            IPS_CreateVariableProfile ($volume_var_name, 0);
+            IPS_CreateVariableProfile ($mute_var_name, 0);
             IPS_SetVariableProfileIcon ($mute_var_name, 'Power');
         }
 

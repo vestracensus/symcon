@@ -13,9 +13,7 @@ class SolusCommunicator extends IPSModule {
         $this->RegisterPropertyString("hostaddress", "");
         $this->RegisterPropertyInteger("hostport", 48630);
 
-        //$this->RegisterVariableInteger("socket_" . $_IPS['SELF'], "Socket", '', 0);
         
-        $this->InitialSetup();
 
     }
 

@@ -1,20 +1,16 @@
 {
-    "id": "{B0167483-F578-9917-072A-AD976267542C}",
-    "name": "Solus Communicator",
+    "id": "{D06FE70A-469B-FA9B-9686-030D62DE208C}",
+    "name": "SolusCommunicator",
     "type": 1,
     "vendor": "Symetrix",
-    "aliases": [
-        "Symetrix Solus Communicator"
-    ],
-    "url": "https://symetrix.co",
-    "parentRequirements": [
-        
-    ],
+    "aliases": [],
+    "parentRequirements": [],
     "childRequirements": [
-        "{13048e66-210d-42a8-8862-e2bd5b0bd466}"
+        "{B1735420-2A23-E15B-60CE-3E85E57E21AC}"
     ],
     "implemented": [
-        "{c4d255d0-fad0-496f-add0-38779ab8a448}"
+        "{D582C717-976A-F604-7E09-95A1983B596A}"
     ],
-    "prefix": "SMTRX"
+    "prefix": "SMTRX",
+    "url": "https://symetrix.co"
 }

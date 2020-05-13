@@ -1,20 +1,19 @@
 {
-    "id": "{46E3FC5E-D1E0-C6E1-77FE-EECAE0BFAA1C}",
-    "name": "Solus Splitter",
+    "id": "{69B571F8-A607-0952-1507-B43BF150DCB3}",
+    "name": "SolusSplitter",
     "type": 2,
     "vendor": "Symetrix",
-    "aliases": [
-        "Symetrix Solus Splitter"
-    ],
-    "url": "https://symetrix.co",
+    "aliases": [],
     "parentRequirements": [
-        "{c4d255d0-fad0-496f-add0-38779ab8a448}"
+        "{D582C717-976A-F604-7E09-95A1983B596A}"
     ],
     "childRequirements": [
-        "{6064361b-984c-4e55-94d6-5dca76f155dc}"
+        "{236C9591-9193-9A9D-CD0D-B451ABC78237}"
     ],
     "implemented": [
-        "{13048e66-210d-42a8-8862-e2bd5b0bd466}", "{9ec96621-3b20-412e-924d-da68965ef352}"
+        "{5D8F4A49-874D-2C1A-77CD-6C05106FA557}",
+        "{B1735420-2A23-E15B-60CE-3E85E57E21AC}"
     ],
-    "prefix": "SMTRX"
+    "prefix": "SMTRX",
+    "url": "https://symetrix.co"
 }

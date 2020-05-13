@@ -1,0 +1,16 @@
+{
+    "elements":
+    [
+        { "type": "ValidationTextBox", "name": "hostaddress", "caption": "Address"},
+        { "type": "NumberSpinner", "name": "hostport", "caption": "Port", "minimum": 1, "maximum": 65535}
+    ],
+    "actions":
+    [
+
+    ],
+    "status":
+    [
+        { "code": 104, "icon": "inactive", "caption": "Instance is not active"},
+        { "code": 105, "icon": "error", "caption": "Parent instance does not exist"}
+    ]
+}

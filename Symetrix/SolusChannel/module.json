@@ -1,0 +1,18 @@
+{
+    "id": "{F073E559-2B40-0034-DFA2-5462B917E955}",
+    "name": "Solus Channel",
+    "type": 3,
+    "vendor": "Symetrix",
+    "aliases": [
+        "Symetrix Solus Channel"
+    ],
+    "url": "https://symetrix.co",
+    "parentRequirements": [
+        "{9ec96621-3b20-412e-924d-da68965ef352}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{6064361b-984c-4e55-94d6-5dca76f155dc}"
+    ],
+    "prefix": "SMTRX"
+}
